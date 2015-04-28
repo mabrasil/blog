@@ -1,4 +1,4 @@
-## *Mudanças anunciadas na ng-Europe, a versão 1.3, “morte” de APIs… O AngularJS 2.0 ainda será o AngularJS que conhecemos?*
+### *Mudanças anunciadas na ng-Europe, a versão 1.3, “morte” de APIs… O AngularJS 2.0 ainda será o AngularJS que conhecemos?*
 
 ---
 Decidi escrever este post para compartilhar um pouco do que penso sobre o que tem acontecido ao longo dos últimos dias desde a ng-europe e o que esperar — ou não — do Angular2.0. Eu não pretendo que esse post seja algo muito técnico nem penso que ele irá cobrir todos os detalhes, mas eu realmente gostaria de falar sobre as minhas impressões e fazer alguns comentários sobre alguns tópicos específicos e anúncios que chamaram a minha atenção.
