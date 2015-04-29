@@ -7,13 +7,9 @@ Se você trabalha com desenvolvimento de aplicações modernas em Javascript, mu
 
 # O que são automatizadores?
 
----
-
 A definição mais simples que eu posso pensar de automatizadores é que eles são um conjunto de ferramentas para tornar tarefas como compilação “limpas e bem documentadas”. Eles fornecem meios para gerenciar as operações no sistema de arquivos do projeto — através da linha de comando. Em outras palavras, eles são algo como “a nova geração de Makefiles”.
 
 # Quais ferramentas temos?
-
----
 
 Eu gostaria de mencionar apenas algumas das quais julgo serem as mais populares do momento: Grunt, Gulp e Broccoli. Os pesos pesados são realmente o Grunt e o Gulp, embora muitos outros existam.
 
@@ -34,7 +30,6 @@ O Broccoli segue o mesmo princípio do Gulp: tarefas baseadas em lógica de cód
 
 # Os problemas
 
----
 Nas últimas semanas eu comecei a refletir sobre a possiblidade de muitas destas ferramentas estarem resolvendo mal o problema mencionado . Se você prestar atenção aos task runners citados, podemos ver que ferramentas como Gulp tentam resolver os problemas do Grunt; e o Broccoli tenta resolver os problemas do Gulp — ou seja, resolver os problemas/insuficiências da ferramenta anterior, mas trazendo à tona seus próprios.
 
 Estas são algumas das razões pelas quais eu acho que essas ferramentas podem às vezes ser más escolhas — ou pelo menos as menos adequadas:
@@ -80,7 +75,6 @@ E agora você deve estar pensando: “Se nenhuma dessas complexas ferramentas de
 
 # A solução
 
----
 Em minha opinião, a solução seria algo como uma ferramenta que possa executar scripts de build, assumir valores de configuração, seja streaming, tenha uma API relativamente simples — e ainda seja fornecida gratuitamente com cada instalação Node.js. Pode soar estranho, mas se você acha que eu estou lhe dizendo que o npm é a melhor solução, você está certo.
 
 Se olharmos para o nosso arquivo package.json — o que significa que você não tem nem que adicionar novos arquivos ao seu projeto— , vamos ver o objeto scripts do npm. Suas propriedades são os nomes de tarefas; e os valores, são os comandos.
@@ -99,7 +93,6 @@ Tudo que você tem de fazer é introduzir uma dependência extra e uma linha de 
 
 #Conclusão
 
----
 No final das contas, se dermos uma olhada no nosso package.json, vamos ver que o que fazemos são chamadas via CLI para os pacotes Node.js que nós temos instalados como dependências de desenvolvimento e, em seguida, canalizando as chamadas de um para o outro — o mesmo que fazemos com o Gulp, mas com menos código, muito mais simplicidade e mais facilidade de manutenção.
 
 Eu não estou dizendo que o Gulp — ou o task runner do momento — nunca será necessário: eu compreendo que pode haver um — ou mais — caso(s) de uso válido(s) para ferramentas de build. Mas, para muitos casos, nós podemos apenas usar o próprio npm. Eu penso que se você considerar fazer isso em seu próximo projeto, os resultados podem surpreendê-lo positivamente.

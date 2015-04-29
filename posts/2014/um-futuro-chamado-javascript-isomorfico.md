@@ -13,7 +13,6 @@ O tempo passou e, depois de muitos avanços, a web tem rompido cada vez mais seu
 
 # A ascensão das Single Page Applications (SPAs)
 
----
 No cenário descrito não demorou muito para que os desenvolvedores começassem a criar aplicações que rodassem inteiramente no navegador usando Javascript e aproveitando todas as evoluções descritas anteriormente. Então frameworks como Backbone.js, Ember.js e AngularJS — muitas vezes referidos como client-side MVC (Model-View-Controller), MVVM (Model-View-ViewModel) ou MVP (Model-View-Presenter) — entre outros nos levaram a uma espécie de boom de SPAs.
 
 A lógica da aplicação passa a viver no cliente, que se comunica com uma API para obter dados. O servidor pode ser escrito em qualquer linguagem e serve uma página de que funciona como um “esqueleto inicial” em HTML. Uma vez que os arquivos Javascript são carregados pelo navegador, a aplicação então é inicializada, busca dados da API, e renderiza o resto da página HTML.
@@ -26,7 +25,6 @@ Servidor e cliente ficaram claramente separados. Desenvolvedores Front e Backend
 
 # Alguns problemas das Single Page Applications (SPAs)
 
----
 ## Desempenho
 
 Com a renderização no lado do cliente, o usuário tem que esperar alguns segundos a mais do que teria caso a aplicação apenas solicitasse templates pré-renderizados a partir do servidor. Este efeito pode ser ainda pior em dispositivos móveis como smartphones e tablets — com especificações de hardware mais fracas. E existem vários estudos que mostram o efeito drástico que um site lento tem sobre os usuários — atrasos de apenas algumas centenas de milissegundos podem levar o usuário a deixar a página ou aplicativo.
@@ -43,7 +41,6 @@ Por último, mas não menos importante, temos a manutenibilidade: enquanto o mod
 
 # E como seria uma abordagem Isomórfica?
 
----
 Em resumo, queremos um híbrido de novas e antigas abordagens: queremos servir HTML totalmente formado a partir do servidor, devido ao desempenho e SEO, mas queremos que a velocidade e flexibilidade que temos com a lógica da aplicação do lado do cliente. Se criássemos as abstrações apropriadas, poderíamos escrever a nossa lógica de aplicação de tal forma que esta seja executada no servidor e no cliente — que é a definição de Javascript isomórfico.
 
 Imagine pelo menos parte da lógica de sua aplicação sendo executada no servidor e no cliente. Pode parecer que não, mas isso abre várias portas: otimizações em desempenho, melhor manutenção, SEO-by-default, entre outras. Mas, para isso, temos importantes conceitos/práticas envolvidos. E aqui estão, resumidamente, alguns que considero mais importantes.
@@ -66,7 +63,6 @@ Queremos descrever os recursos necessários para renderizar uma determinada pág
 
 # As ferramentas que temos
 
----
 Nesta seção cito apenas algumas das mais populares bibliotecas e frameworks isomórficas — mas há muitos outros que merecem a sua atenção — e até mesmo algumas horas de estudo.
 
 ## Mojito
@@ -103,7 +99,6 @@ Se você já é um “ninja” ou algo do tipo com Node.js e Javascript em geral
 
 # Conclusão
 
----
 Escrever aplicações de grande porte é um trabalho sempre complicado. Encapsular e reutilizar componentes dessas aplicações em ambos o cliente e o servidor torna isso uma tarefa ainda mais complicada. Contudo, aplicações que requerem um alto nível de desempenho, com alta taxa de usabilidade simultânea, têm se tornado cada vez mais comuns e a combinação de renderização em ambos o cliente e o servidor está ganhando cada vez mais espaço como uma solução a tal demanda — o que se fortalece ainda mais à medida que mais organizações de grande porte passam a se sentir “confortáveis” em rodar Node.js em produção.
 
 Ainda assim é importante lembrar que Javascript isomórfico continua algo relativo: pode começar apenas com compartilhamento de templates, passando por toda a camada de interação da aplicação até toda a lógica de negócios da mesma. A maneira como esse compartilhamento de código deve ser feita, e o que do código Javascript de sua aplicação é compartilhado entre o cliente e o servidor, depende inteiramente desta e de seu específico conjunto de requisitos/restrições.

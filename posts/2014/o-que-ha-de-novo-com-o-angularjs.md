@@ -11,14 +11,12 @@ Antes de eu começar, as opiniões neste post são baseadas na minha experiênci
 
 # O AngularJS 1.3
 
----
 Agora vamos começar falando sobre a versão atual: as informações sobre Angular 1.3 já estão disponíveis desde que foi lançada a versão estável — na semana anterior da ng-europe, se não me engano. Confesso que eu tinha ouvido falar várias melhorias para a API da 1.3, mas eu não tinha me sentido muito animado com isso – não tinha encontrado uma razão convincente para atualizar os meus projetos atuais de 1.2.x para 1.3.
 
 Mas, depois de assistir algumas palestras da ng-europe e ler alguns artigos e discussões, estou convencido dos benefícios de atualização. Certamente é a melhor versão do Angular disponível hoje. Ele vem com muitas correções de bugs (com $browser, $http, $injector, $parse, $location, $compile por exemplo) e também apresenta melhorias — como one-time bindings, o módulo ngMessages e muitos outros. E, assim como novas APIs, há ainda melhorias que podem render benefícios significativos no desempenho de seu projeto.
 
 # AngularJS 2.0
 
----
 Agora, o tão esperado Angular 2.0 — o tema na mente de todo desenvolvedor Angular nesse momento. Foi circulada muita informação sobre ele desde o seu anúncio, mas irei comentar aqui somente alguns pontos que se destacaram mais para mim.
 
 ## Matando APIs
@@ -59,7 +57,6 @@ E outra: eu acho que, se você é qualquer tipo de desenvolvedor web, você tem 
 
 # Conclusão
 
----
 Eu confesso que estou muito animado sobre os rumos do Angular 2.0, e que estou ansioso para atualizar alguns de meus projetos para a 1.3 e me aproveitar das melhorias disponíveis. Eu acho que a maioria das mudanças anunciadas para o 2.0 são evolutivas, e projetadas para simplificar os padrões que muitos de nós já estão usando. E eu acho que muitos outros desenvolvedores já estão percebendo a mesma coisa — e assim também fez a equipe do Angular. Com o AngularJS 2.0, eles estão apenas respondendo a maneira como parte da comunidade tem produzido — e isso me deixa ansioso para ver o que está por vir!
 
 *Originalmente postado em [O que há de novo com o AngularJS?](https://medium.com/pensamentos-js/o-que-tem-acontecido-com-o-angularjs-d44ae1b0a50e).*
